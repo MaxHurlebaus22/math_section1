@@ -11,5 +11,8 @@ exports.mult = function(a,b) {
 };
 
 exports.div = function(a,b) {
+	if (0 === b) {
+		return "Error! Division by zero.";
+	}
 	return a / b;
 };
